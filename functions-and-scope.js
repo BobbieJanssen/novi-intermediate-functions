@@ -4,7 +4,7 @@
 
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
-/* Opdracht  1: Cum Laude */
+/* Opdracht 1: Cum Laude */
 
 /* 1a: Script schrijven  */
 // De administratie moet weten hoeveel studenten er dit blok cum laude zijn afgestudeerd (8 of hoger). Daar moeten namelijk speciale diploma's voor besteld worden.
@@ -13,11 +13,14 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // * Hoe zorg ik ervoor dat dit ook werkt wanneer de array 100 entries bevat?
 // * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden?
 // Log het antwoord in de terminal.
-// Stap 1: Er moet een variabele gemaakt worden om de uitslag in op te slaan;
-// Stap 2: Er moet een for-loop gemaakt worden om door alle cijfers te gaan;
-// Stap 3: Een if statement om te kijken of het cijfer 8 of hoger is;
-// Stap 4: als het waar is moet het worden opgeteld bij de variabele;
-// Stap 5: console.log met de waarde van de variabele.
+
+/*
+Stap 1: Er moet een variabele gemaakt worden om de uitslag in op te slaan;
+Stap 2: Er moet een for-loop gemaakt worden om door alle cijfers te gaan;
+Stap 3: Een if statement om te kijken of het cijfer 8 of hoger is;
+Stap 4: als het waar is moet het worden opgeteld bij de variabele;
+Stap 5: console.log met de waarde van de variabele.
+*/
 
 let cumLaudeCount = 0;
 
@@ -64,14 +67,14 @@ console.log(cumLaude(grades));
 console.log(cumLaude([6, 4, 5]));
 console.log(cumLaude([8, 9, 4, 6, 10]));
 
-/* Opdracht  2: Gemiddeld cijfer */
+/* Opdracht 2: Gemiddeld cijfer */
 
 /* 2a: Script schrijven  */
 // De studenten-administratie moet ieder blok opnieuw berekenen wat het gemiddelde eindcijfer is, maar we beginnen met de grades array van hierboven.
 // Schrijf de stapjes om dit te kunnen berekenen eerst uit en vraag jezelf de volgende dingen af:
 // * Hoe wordt een gemiddelde berekend?
 // * Wat moet ik verzamelen uit de array van cijfers om uiteindelijk een gemiddelde te kunnen berekenen?
-// * Hoe zorgt ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten?
+// * Hoe zorg ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten?
 // Log het antwoord in de terminal.
 
 /*
@@ -81,8 +84,6 @@ Stap 3: zorg via een forEach dat alle waardes in de array ook echt worden opgete
 Stap 4: deel opgetelde waardes door het aantal waardes;
 Stap 5: return dit getal (het gemiddelde)
  */
-
-
 
 function getAverageFinalGrade(grades) {
     let accumulatedGrade = 0;
@@ -136,7 +137,7 @@ console.log(averageGrade([8, 9, 4, 6, 10]));
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-/* ik heb er alleen .toFixed  bij gezet met 2 in de ronde haakjes*/
+/* ik heb er alleen .toFixed bij gezet met 2 in de ronde haakjes*/
 
 function averageGradeTwoDecimals(arr) {
     let accumulatedGrade = 0;
@@ -157,7 +158,7 @@ console.log(averageGradeTwoDecimals(grades));
 // Schrijf een script die op basis van de grades array (hierboven) checkt wat het hoogst behaalde cijfer is. Je mag hier geen bestaande methoden voor gebruiken. Schrijf de stapjes eerst uit en vraag jezelf de volgende dingen af:
 // * Hoe kan ik iedere waarde van de array langsgaan?
 // * Op welke conditie moet ik checken?
-// * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan opslaan?
+// * Hoe zorg ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan opslaan?
 // Log het antwoord in de terminal.
 
 /*

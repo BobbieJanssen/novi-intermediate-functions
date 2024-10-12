@@ -2,8 +2,9 @@
 // Je zult hier methoden van het String Object voor nodig hebben, dus pak de paragraaf op EdHub over het String Object er even bij.
 
 
-/* Opdracht  1 */
+/* Opdracht 1 */
 // Schrijf een functie genaamd getEmailDomain, die een emailadres verwacht en de domeinnaam teruggeeft. Een domeinnaam is hetgeen dat na het @ in het adres staat
+
 /*
 Stap 1: maak een functie aan die getEmailDomain(emailAddress) heet;
 Stap 2: zorg dat alles tot en met de @ wordt verwijderd;
@@ -27,9 +28,9 @@ console.log(getEmailDomain("a.wiersma@outlook.com"));
 
 
 
-
-/* Opdracht  2 */
+/* Opdracht 2 */
 // Schrijf een functie genaamd typeOfEmail, die een emailadres verwacht. De functie checkt of het emailadres een novi domein heeft (medewerker), een novi-education domein (student), of extern domein (zoals gmail of outlook)
+
 /*
 Dezelfde functie, maar dan met switch case
  */
@@ -63,12 +64,13 @@ console.log(typeOfEmail("a.wiersma@outlook.com"));
 
 
 
-/* Opdracht  3 */
+/* Opdracht 3 */
 // Schrijf een functie genaamd checkEmailValidity, die een emailadres verwacht en checkt of het emailadres valide is. De functie returned true of false, afhankelijk van de uitkomst.
 // Een emailadres is valide wanneer:
 // * Er een @ in voorkomt
 // * Er géén , in voorkomt
 // * Er géén . in voorkomt als allerlaatste karakter (dus hotmail.com is valide, net als outlook.nl, maar outlooknl. niet)
+
 /*
 Stap 1: maak een functie die checkEmailValidity(emailAddress) heet;
 Stap 2: maak een variabele aan voor het resultaat
